@@ -1,26 +1,33 @@
-﻿//// See https://aka.ms/new-console-template for more information
-//Console.WriteLine("Hello, World!");
-//double celcius, faranheit;
-//celcius = 65.8;
-//faranheit = 45.2;
-//string monPrenom;
-//Console.WriteLine(celcius + faranheit);
-//Console.WriteLine("Donne-moi ton prenom :");
-//monPrenom = Console.ReadLine();
-//Console.WriteLine("Bonjour "+monPrenom);
+﻿string monPrenom = "";
+string message = "Salut à tous !";
+int valeur = 13;
+string ageChaine = "";
+int age = 0; 
 
-int budgetCourses = 500;
-int epargne = 1000;
+Console.WriteLine(age);
+Console.WriteLine("Donne-moi ton prenom :");
 
-epargne += 100;
+monPrenom = Console.ReadLine();
+Console.WriteLine("Bonjour "+monPrenom);
 
-//Retirer 50 de notre budget Courses
-budgetCourses = budgetCourses - 50;
+Console.WriteLine("donne moi ton age :");
+ageChaine = Console.ReadLine();
+age = int.Parse(ageChaine);
+age += 1;
+Console.WriteLine("Bonjour " +monPrenom+ ", l'an prochain tu auras " +age+ " ans !");
 
-//Mettre à jour la durée d'épargne nécessaire pour atteindre l'objectif
-int nombreJoursEpargne = (5000 - budgetCourses) / 500;
+// int budgetCourses = 500;
+// int epargne = 1000;
 
-//mettre à jour le budget courses 
-budgetCourses = budgetCourses + (30 - 10) * 7;
-Console.WriteLine(nombreJoursEpargne);
-Console.WriteLine(budgetCourses);
+// epargne += 100;
+
+// Retirer 50 de notre budget Courses
+// budgetCourses = budgetCourses - 50;
+
+// Mettre à jour la durée d'épargne nécessaire pour atteindre l'objectif
+// int nombreJoursEpargne = (5000 - budgetCourses) / 500;
+
+// mettre à jour le budget courses 
+// budgetCourses = budgetCourses + (30 - 10) * 7;
+// Console.WriteLine(nombreJoursEpargne);
+// Console.WriteLine(budgetCourses);
