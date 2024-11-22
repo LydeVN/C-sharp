@@ -15,10 +15,10 @@ Console.WriteLine("Bonjour " + monPrenom);
 Console.WriteLine("donne moi ton age :");
 ageChaine = Console.ReadLine();
 age = int.Parse(ageChaine);
-age += 1;
 bool ageMM;
-Console.WriteLine("Bonjour " + monPrenom + ", l'an prochain tu auras " + age + " ans !");
+int differenceUserAge;
 
+// majeur ou mineur
 if (age >= 18)
 {
     ageMM = true;
@@ -28,14 +28,30 @@ else
     ageMM = false;
 }
 
+// combien de temps depuis la majorité
 if (ageMM == true)
 {
-    Console.WriteLine("Vous êtes majeur !");
+    differenceUserAge = age - 18;
+    Console.WriteLine("Vous êtes majeur depuis déjà " + differenceUserAge + " ans !");
 }
 else
 {
     Console.WriteLine("Vous êtes mineur !");
 }
+age += 1;
+
+
+// année prochaine
+Console.WriteLine(monPrenom + ", l'an prochain tu auras " + age + " ans.");
+
+
+
+
+
+
+
+
+
 
 Console.ReadLine();
 
