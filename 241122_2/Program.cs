@@ -4,20 +4,20 @@ string monPrenom = "";
 string message = "Salut à tous !";
 int valeur = 13;
 string ageChaine = "";
-int age = 0; 
+int age = 0;
 
 Console.WriteLine(age);
 Console.WriteLine("Donne-moi ton prenom :");
 
 monPrenom = Console.ReadLine();
-Console.WriteLine("Bonjour "+monPrenom);
+Console.WriteLine("Bonjour " + monPrenom);
 
 Console.WriteLine("donne moi ton age :");
 ageChaine = Console.ReadLine();
 age = int.Parse(ageChaine);
 age += 1;
 bool ageMM;
-Console.WriteLine("Bonjour " +monPrenom+ ", l'an prochain tu auras " +age+ " ans !");
+Console.WriteLine("Bonjour " + monPrenom + ", l'an prochain tu auras " + age + " ans !");
 
 if (age >= 18)
 {
@@ -28,13 +28,13 @@ else
     ageMM = false;
 }
 
-if (ageMM == true);
+if (ageMM == true)
 {
-    Console.WriteLine("Vous êtes majeur !")
+    Console.WriteLine("Vous êtes majeur !");
 }
 else
 {
-    Console.WriteLine("Vous êtes mineur !")
+    Console.WriteLine("Vous êtes mineur !");
 }
 
 Console.ReadLine();
