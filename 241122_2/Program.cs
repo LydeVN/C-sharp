@@ -56,15 +56,21 @@ Console.WriteLine(final);
 
 
 Livre CraigLivre = new Livre();
-CraigLivre.Titre = "L'art de la programmation";
-CraigLivre.Auteur = "Moi";
+Console.WriteLine("quel est le titre de votre livre ?");
+CraigLivre.Titre = Console.ReadLine();
+
+Console.WriteLine("Et l'auteur de ce livre ?");
+CraigLivre.Auteur = Console.ReadLine();
+
 CraigLivre.NombreDePages= 200;
 
 
 Livre monLivre = new();
 
 
+Console.WriteLine(CraigLivre.Titre);
 Console.WriteLine(CraigLivre.Auteur);
+Console.WriteLine(CraigLivre.NombreDePages);
 // int budgetCourses = 500;
 // int epargne = 1000;
 
