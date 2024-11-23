@@ -1,4 +1,5 @@
 ﻿
+using _241122_2;
 using System.Security.Cryptography.X509Certificates;
 
 const int bestNumber = 12;
@@ -52,32 +53,18 @@ double final = porteMonnaie / (double) taxe;
 
 Console.WriteLine(final);
 
-class Livre
-{
-    public string titre {  get; set; }
-    public string auteur { get; set; }
-    public int NombreDePages { get; set; }
 
-    // Constructeur par défaut
-    public Livre()
-    {
-        titre = "Titre par défaut";
-        auteur = "Auteur inconnu";
-        NombreDePages = 0;
-    }
-
-}
 
 Livre CraigLivre = new Livre();
-CraigLivre.titre = "L'art de la programmation";
-CraigLivre.auteur = "Moi";
+CraigLivre.Titre = "L'art de la programmation";
+CraigLivre.Auteur = "Moi";
 CraigLivre.NombreDePages= 200;
 
 
 Livre monLivre = new();
 
 
-Console.WriteLine(monLivre.auteur);
+Console.WriteLine(CraigLivre.Auteur);
 // int budgetCourses = 500;
 // int epargne = 1000;
 
