@@ -1,5 +1,7 @@
 ﻿
+using System.Security.Cryptography.X509Certificates;
 
+const int bestNumber = 12;
 string monPrenom = "";
 string message = "Salut à tous !";
 int valeur = 13;
@@ -44,17 +46,38 @@ age += 1;
 // année prochaine
 Console.WriteLine(monPrenom + ", l'an prochain tu auras " + age + " ans.");
 
+int porteMonnaie = 1000;
+int taxe = 2;
+double final = porteMonnaie / (double) taxe;
+
+Console.WriteLine(final);
+
+class Livre
+{
+    public string titre {  get; set; }
+    public string auteur { get; set; }
+    public int NombreDePages { get; set; }
+
+    // Constructeur par défaut
+    public Livre()
+    {
+        titre = "Titre par défaut";
+        auteur = "Auteur inconnu";
+        NombreDePages = 0;
+    }
+
+}
+
+Livre CraigLivre = new Livre();
+CraigLivre.titre = "L'art de la programmation";
+CraigLivre.auteur = "Moi";
+CraigLivre.NombreDePages= 200;
 
 
+Livre monLivre = new();
 
 
-
-
-
-
-
-Console.ReadLine();
-
+Console.WriteLine(monLivre.auteur);
 // int budgetCourses = 500;
 // int epargne = 1000;
 
