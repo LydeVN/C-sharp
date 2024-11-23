@@ -2,6 +2,23 @@
 using _241122_2;
 using System.Security.Cryptography.X509Certificates;
 
+//Création d'une array
+int[] tasseDeCafeParJourDeLaSemaine = new int[] {2,7,0,5,9,2,0};
+Console.WriteLine("le premier jour de la semaine je bois "+tasseDeCafeParJourDeLaSemaine[1]+" cafés");
+
+string[,] mesSièges = new string[30,12];
+mesSièges[9,5] = "Jules Vannelli";
+mesSièges[9, 4] = "Diego Villanueva";
+
+
+// créatoin d'une liste
+IList<int> maListe = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+maListe.Insert(1,3);
+Console.WriteLine(maListe[1]);
+
+
+Console.WriteLine(mesSièges[9,5]+" et " + mesSièges[9,4]+" seront bien côte à côte.");
+
 const int bestNumber = 12;
 string monPrenom = "";
 string message = "Salut à tous !";
@@ -71,6 +88,10 @@ Livre monLivre = new();
 Console.WriteLine(CraigLivre.Titre);
 Console.WriteLine(CraigLivre.Auteur);
 Console.WriteLine(CraigLivre.NombreDePages);
+
+
+
+
 // int budgetCourses = 500;
 // int epargne = 1000;
 
