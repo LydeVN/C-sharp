@@ -2,22 +2,39 @@
 using _241122_2;
 using System.Security.Cryptography.X509Certificates;
 
-//Création d'une array
+//Création d'un array
 int[] tasseDeCafeParJourDeLaSemaine = new int[] {2,7,0,5,9,2,0};
-Console.WriteLine("le premier jour de la semaine je bois "+tasseDeCafeParJourDeLaSemaine[1]+" cafés");
+Console.WriteLine("le premier jour de la semaine je bois "+tasseDeCafeParJourDeLaSemaine[0]+" cafés");
+Console.WriteLine("Mon array compte "+tasseDeCafeParJourDeLaSemaine.Length+"données");
 
+
+//Aray avec 30 siègle et 12 rangées dans une salle de cinema
 string[,] mesSièges = new string[30,12];
 mesSièges[9,5] = "Jules Vannelli";
-mesSièges[9, 4] = "Diego Villanueva";
+mesSièges[9, 4] = "Noa Nafi";
+Console.WriteLine(mesSièges[9, 5] + " et " + mesSièges[9, 4] + " seront bien côte à côte.");
 
 
 // créatoin d'une liste
 IList<int> maListe = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 maListe.Insert(1,3);
 Console.WriteLine(maListe[1]);
+Console.WriteLine("Ma liste compte " + maListe.Count+" données");
 
+//création d'un ensemble non ordonnée
+ISet<string> mySet = new HashSet<string>();
+mySet.Add("oeufs");
+mySet.Add("sucre");
+mySet.Add("beurre");
+mySet.Add("sel");
+Console.WriteLine(mySet.Count);
 
-Console.WriteLine(mesSièges[9,5]+" et " + mesSièges[9,4]+" seront bien côte à côte.");
+//création d'un dictionnaire
+IDictionary<string, int> monDictionnaire = new Dictionary<string, int>();
+monDictionnaire.Add("Jennifer", 34);
+monDictionnaire.Add("Patrick", 53);
+monDictionnaire.Add("Jean", 27);
+Console.WriteLine("Jennifier a "+monDictionnaire["Jennifer"]+ " ans");
 
 const int bestNumber = 12;
 string monPrenom = "";
@@ -26,7 +43,7 @@ int valeur = 13;
 string ageChaine = "";
 int age = 0;
 
-Console.WriteLine(age);
+Console.WriteLine("le meilleur nombre est "+bestNumber+".");
 Console.WriteLine("Donne-moi ton prenom :");
 
 monPrenom = Console.ReadLine();
